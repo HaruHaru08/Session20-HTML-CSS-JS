@@ -5,14 +5,14 @@ if (number < 0 || isNaN(number)) {
     let count = 0;
     let index = 2;
     while (count < number) {
-        let isPrine = true;
+        let isPrime = true;
         for (let i = 2; i <= Math.sqrt(index); i++) {
             if (index % i === 0) {
                 isPrine = false;
                 break;
             }
         }
-        if (isPrine) {
+        if (isPrime) {
             console.log(index);
             count++;
         } 
